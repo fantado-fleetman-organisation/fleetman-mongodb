@@ -3,14 +3,14 @@ pipeline {
    parameters {
     string(name: 'SERVICE_NAME', defaultValue: 'fleetman-mongodb', description: 'Microservice name')
    }
-   environment {
+  // environment {
      // You must set the following environment variables
      // ORGANIZATION_NAME
      // YOUR_DOCKERHUB_USERNAME (it doesn't matter if you don't have one)
 
      //SERVICE_NAME = "fleetman-mongodb"     
      //REPOSITORY_TAG="${YOUR_DOCKERHUB_USERNAME}/${ORGANIZATION_NAME}-${SERVICE_NAME}:${BUILD_ID}"
-   }
+   //}
 
    stages {
       stage('Preparation') {
